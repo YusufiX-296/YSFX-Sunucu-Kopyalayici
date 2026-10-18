@@ -1,0 +1,47 @@
+YSFX SUNUCU KOPYALAMA BOTU - NASIL CALISTIRILIR
+================================================
+
+GEREKENLER
+  - Windows 10/11 + internet
+  - Python 3.10 veya uzeri  (yoksa: https://www.python.org/downloads/
+    -> kurarken "Add Python to PATH" kutusunu isaretleyin)
+  - Bir Discord BOT tokeni  (https://discord.com/developers/applications
+    -> New Application -> Bot -> Reset Token / Copy)
+  - Discord Developer Portal'da "Privileged Gateway Intents" gerekmez.
+
+ADIM ADIM
+  1) "YSFX Sunucu Kopyalama Botu.bat" dosyasina CITIFT TIKLAYIN.
+     (ilk acilista discord.py + colorama pip ile otomatik kurulur)
+  2) Bot Tokenini yapistirin.
+  3) Kaynak Sunucu ID  : kopyalanacak DOLU sunucu  -> BU SUNUCUYA DOKUNULMAZ
+     (sağ tik > Sunucu Ayarlari > Gelismis > Sunucu Kimligi (Gelistirici
+      modu acikken) kopyalanir, 17-22 rakam)
+  4) Hedef Sunucu ID   : kendi BOŞ sunucunuz; icindekiler silinip
+     kaynaktakinin aynisi yeniden kurulacak.
+  5) Ekrana cikan DAVET LINKI ile botu IKI sunucuya da davet edin.
+     (botun yetkileri: Roller, Kanallar, Sunucu, Emojileri Yonet)
+  6) "Kopyalamayi Baslatmak Icin Enter Tusuna Basin" -> kopyalama
+     ARKA PLANDA baslar; konsol serbest kalir.
+
+KOMUT SATIRI KOMUTLARI
+  durum     - hangi adimda, kac rol/kanal silindi/yapildi, gecen sure
+  duraklat  - kopyalamayi duraklat
+  devam     - duraklatilmis kopyalamaya devam
+  iptal     - kopyalamayi iptal et (hedef sunucu yarim kalabilir)
+  log [n]   - gunlugun son n satiri (varsayilan 15)
+  davet     - davet linkini tekrar goster
+  yardim    - komut listesi
+  cikis     - botu kapat
+
+YSFXBot_Dosyalar ICINDE NE VAR?
+  ayarlar.json      girilen ID'ler, sunucu adlari, davet linki (token yok)
+  bot_tokeni.txt    kayitli token (SADECE senin bilgisayarinda, PAYLASMA!)
+                    -> silerseniz sonraki acilista token tekrar sorulur
+  davet_linki.txt   davet linki + kisa talimat
+  bot_gunlugu.log   islem kaydi
+
+DIKKAT
+  * Botu HEDEF sunucuda "Sunucu Yöneticisi" yapin; ayni zamanda botun
+    ROLU, kopyalanacak en ustteki rolden ASAGIDA kalmalidir.
+  * Kopyalama sadece HEDEF sunucuyu degistirir; KAYNAK'a dokunulmaz.
+  * Token'ini hicbir yerde paylasma; bu klasoru kimselere yollama.

@@ -1,0 +1,7 @@
+# YSFX Sunucu Kopyalama Botu - gereken Python paketleri
+# Elle kurmak isterseniz:
+#   pip install -r gerekli_kutuphaneler.txt
+# (normalde ilk calistirmada script bunlari otomatik kurar)
+
+discord.py>=2.3
+colorama>=0.4.6
